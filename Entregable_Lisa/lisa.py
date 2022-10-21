@@ -21,7 +21,6 @@ while True :
     frase:str = datos[0]['quote'] 
     imagen = datos[0]['image']
     URL_imagen = requests.get(imagen).content #antes estaba en el if, el elif y el de lista general
-    imagen_local = f"Entregable_Lisa/{personaje}.png" 
 
     if personaje == 'Homer Simpson':
         lista_homer.append((personaje, frase))

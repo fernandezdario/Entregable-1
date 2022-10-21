@@ -6,9 +6,9 @@ COPY ./requirements.txt /app/
 
 #el WORKDIR nos permite hacer lo siguiente; Establece el directorio de trabajo para cualquier instrucción posterior ADD, COPY, CMD, ENTRYPOINT o RUN que le siga en el Dockerfile.
 WORKDIR /app/
-RUN mkdir /General
-RUN mkdir /Lisa
-RUN mkdir /Homer 
+RUN mkdir General
+RUN mkdir Lisa
+RUN mkdir Homer 
 RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python3", "simpsons.py" ]
