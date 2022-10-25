@@ -4,7 +4,6 @@
 #1: Conseguir los datos de la API cada 30 segundos
 
 import requests
-import json
 import time 
 import csv
 
@@ -31,20 +30,20 @@ while True :
     
     
     my_dict0 = {"frase": frase, "personaje": personaje} #creamos un diccionario para almacenar las frases con el nombre de los personajes dentro del csv
-    with open('general.csv', 'a') as f:  #en este caso le damos el comando de que nos abra el csv
+    with open('General/general.csv', 'a') as f:  #en este caso le damos el comando de que nos abra el csv
         a = csv.DictWriter(f, my_dict0.keys())
         a.writerow(my_dict0)#aqui le decimos que en el csv general se escriban las frases de todos los personajes 
 
     if personaje == 'Homer Simpson':
         my_dict1 = {"frase": frase, "personaje": personaje}
-        with open('homer.csv', 'a') as g: 
+        with open('Homer/homer.csv', 'a') as g: 
             a = csv.DictWriter(g, my_dict1.keys())
             a.writerow(my_dict1)#en este caso solo se guardan las frases de homer en su csv propio
 
     if personaje == 'Lisa Simpson':
         my_dict2 = {"frase": frase, "personaje": personaje}
-        with open('lisa.csv', 'a') as h: 
+        with open('Lisa/lisa.csv', 'a') as h: 
             a = csv.DictWriter(h, my_dict2.keys()) #en este caso la variable de a, es asi pone lo reconoce como un append y se añaden las frases en orden de una en una, pero si fuese una w, la sobrescribiria y solo apareceria una frase en el csv, es decir la ultima frase que se haya impreso, mientras que con la a se almacenan todas.
             a.writerow(my_dict2) #aqui lo mismo que en el de homer, pero solo con lisa
 
-    time.sleep(30) #con este comando le decimos que nos provea de la frase, pero cada 30 segundos, no de forma constante
+    time.sleep(0) #con este comando le decimos que nos provea de la frase, pero cada 30 segundos, no de forma constante
