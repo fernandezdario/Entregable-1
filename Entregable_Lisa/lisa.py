@@ -20,12 +20,12 @@ while True :
 
 
     my_dict0 = {"personaje": personaje, "frase": frase}
-    with open(f'C:\\Users\dario\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\general_1.csv', 'a') as f: 
+    with open(f'general_1.csv', 'a') as f: 
         a = csv.DictWriter(f, my_dict0.keys())
         a.writerow(my_dict0)
     try:
-        os.mkdir(f"C:\\Users\\dario\\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\{personaje}")
-        imagen_local = (f"C:\\Users\dario\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\{personaje}\{personaje}.png")
+        os.mkdir(f"Personajes/{personaje}")
+        imagen_local = (f"Personajes/{personaje}/{personaje}.png")
     
         with open(imagen_local, 'wb') as handler:
             handler.write(URL_imagen) 
@@ -35,13 +35,13 @@ while True :
  
     if personaje == 'Homer Simpson':
         my_dict1 = {"personaje": personaje,"frase": frase}
-        with open(f'C:\\Users\dario\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\{personaje}\{personaje}.csv', 'a') as g: 
+        with open(f'Personajes/{personaje}/{personaje}.csv', 'a') as g: 
             a = csv.DictWriter(g, my_dict1.keys())
             a.writerow(my_dict1)
 
     elif personaje == 'Lisa Simpson':
         my_dict2 = {"personaje": personaje, "frase": frase}
-        with open(f'C:\\Users\dario\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\{personaje}\{personaje}.csv', 'a') as h: 
+        with open(f'Personajes/{personaje}/{personaje}.csv', 'a') as h: 
             a = csv.DictWriter(h, my_dict2.keys()) 
             a.writerow(my_dict2) 
     
@@ -54,7 +54,7 @@ while True :
         else:
             contador_palabras[palabra] = 1
     
-    with open ('C:\\Users\\dario\\OneDrive\\Documentos\\GitHub\\Entregable-1\\Entregable_Lisa\\CuentaPalabras.txt', 'w') as contador:
+    with open ('CuentaPalabras.txt', 'w') as contador:
       for clave, valor in contador_palabras.items():
         contador.write(f"\n{clave}: {valor}")
         
