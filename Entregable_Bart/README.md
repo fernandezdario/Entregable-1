@@ -1,4 +1,6 @@
-# Bart
+# Bart (Sin terminar entregable)
+
+En este entregable he tratado de realizar una prueba. Sin embargo, no ha sido exitosa y seguimos trabajando ella hasta que mi "bendito" cerebro sea capaz de saber como crear un Docker-compose que haga build del contenedor original.
 
 Ejercicio a realizar:
 
