@@ -46,4 +46,4 @@ while True :
             a = csv.DictWriter(h, my_dict2.keys()) #en este caso la variable de a, es asi pone lo reconoce como un append y se añaden las frases en orden de una en una, pero si fuese una w, la sobrescribiria y solo apareceria una frase en el csv, es decir la ultima frase que se haya impreso, mientras que con la a se almacenan todas.
             a.writerow(my_dict2) #aqui lo mismo que en el de homer, pero solo con lisa
 
-    time.sleep(0) #con este comando le decimos que nos provea de la frase, pero cada 30 segundos, no de forma constante
+    time.sleep(30) #con este comando le decimos que nos provea de la frase, pero cada 30 segundos, no de forma constante
