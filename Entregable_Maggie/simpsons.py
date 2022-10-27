@@ -1,8 +1,3 @@
-
-#Estrucutura Entregable 1
-
-#1: Conseguir los datos de la API cada 30 segundos
-
 import requests
 import time 
 import csv
@@ -17,6 +12,7 @@ while True :
     
     personaje:str = quotes1[0]['character'] #aqui lo que le marcamos es que la API nos da la informacion en forma de una lista compuesta por un diccionario, pero como solo existe UN UNICO diccionario por esto le marcamos la posicion 0, porque es el unico elemento de la lista, y despues con lo de charachter lo que le decimos es que la variable personaje debe ser igual al elemento del charachter dentro del diccionario, el cual su vez se encuentra dentro de la ÚNICA lista que existe.
     frase:str = quotes1[0]['quote'] #en este caso hacemos lo mismo que la de arriba pero con las frases de los personajes
+    
     if personaje == 'Homer Simpson':
         lista_homer.append((personaje, frase))
         lista_general.append((personaje,frase)) #ponemos lista general porque las frases de homer también deben guardarse en el csv de general
