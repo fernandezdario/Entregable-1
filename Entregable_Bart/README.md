@@ -1,4 +1,5 @@
 # Bart
+<img src="https://i.pinimg.com/originals/85/02/c9/8502c98920e3302ccc874073a6525d74.jpg" width="500" height="400" />
 
 Ejercicio a realizar:
 
