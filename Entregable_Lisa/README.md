@@ -1,5 +1,7 @@
 # Lisa
 
+<img src="https://elclosetlgbt.com/wp-content/uploads/2022/09/Lisa-Simpson-Queer.png" width="600" height="400" />
+
 Ejercicio a realizar:
 
 1. Mejorar el código de Maggie para descargar la imagen del personaje y guardarla en la carpeta del
