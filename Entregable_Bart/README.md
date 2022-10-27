@@ -1,4 +1,4 @@
-# Bart (Sin terminar)
+# Bart (Sin terminar entregable)
 
 Ejercicio a realizar:
 
