@@ -1,6 +1,6 @@
 # Lisa
 
-<img src="https://elclosetlgbt.com/wp-content/uploads/2022/09/Lisa-Simpson-Queer.png" width="600" height="400" />
+<img src="https://i.etsystatic.com/24053525/r/il/cefb6d/3198081721/il_fullxfull.3198081721_mqxa.jpg" width="500" height="400" />
 
 Ejercicio a realizar:
 
