@@ -16,7 +16,7 @@ while True :
     personaje:str = datos[0]['character'] 
     frase:str = datos[0]['quote'] 
     imagen = datos[0]['image']
-    URL_imagen = requests.get(imagen).content #antes estaba en el if, el elif y el de lista general
+    URL_imagen = requests.get(imagen).content 
 
 
     my_dict0 = {"personaje": personaje, "frase": frase}

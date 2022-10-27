@@ -2,9 +2,6 @@ import requests
 import time 
 import csv
 
-lista_general = [] #creamos estas listas para que cuando necesitemos que nos añada más con el comando (.append) se alamacenen en algún lugar
-lista_lisa = []
-lista_homer = []
 while True :
     url = "https://thesimpsonsquoteapi.glitch.me/quotes" 
     data = requests.get(url) #este comando nos permite hacerle las peticiones a la API (URL de arriba)
@@ -12,18 +9,6 @@ while True :
     
     personaje:str = quotes1[0]['character'] #aqui lo que le marcamos es que la API nos da la informacion en forma de una lista compuesta por un diccionario, pero como solo existe UN UNICO diccionario por esto le marcamos la posicion 0, porque es el unico elemento de la lista, y despues con lo de charachter lo que le decimos es que la variable personaje debe ser igual al elemento del charachter dentro del diccionario, el cual su vez se encuentra dentro de la ÚNICA lista que existe.
     frase:str = quotes1[0]['quote'] #en este caso hacemos lo mismo que la de arriba pero con las frases de los personajes
-    
-    if personaje == 'Homer Simpson':
-        lista_homer.append((personaje, frase))
-        lista_general.append((personaje,frase)) #ponemos lista general porque las frases de homer también deben guardarse en el csv de general
-
-    elif personaje == 'Lisa Simpson':
-        lista_general.append((personaje, frase))
-        lista_lisa.append((personaje,frase)) #aqui lo mismo que arriba
-
-
-    lista_general.append((personaje, frase)) #este lo ponemos a parte porque es la lista general a secas
-    
     
     my_dict0 = {"frase": frase, "personaje": personaje} #creamos un diccionario para almacenar las frases con el nombre de los personajes dentro del csv
     with open('General/general.csv', 'a') as f:  #en este caso le damos el comando de que nos abra el csv
