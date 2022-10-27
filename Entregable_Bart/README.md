@@ -1,5 +1,7 @@
 # Bart (Sin terminar entregable)
 
+En este entregable he tratado de realizar una prueba. Sin embargo, no ha sido exitosa y seguimos trabajando ella.
+
 Ejercicio a realizar:
 
 1. Construir un Docker-compose con una imagen de un contenedor de Jupyter
