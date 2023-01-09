@@ -17,7 +17,7 @@ while True :
 
     if personaje == 'Homer Simpson':
         my_dict1 = {"frase": frase, "personaje": personaje}
-        with open('Homer/homer.csv', 'a') as g: 
+        with open('Homer/homer.csv', 'a') as g: #en estos casos si hacemos un a+ a parte de hacer un append nos lo crea, en caso de que no esté.
             a = csv.DictWriter(g, my_dict1.keys())
             a.writerow(my_dict1)#en este caso solo se guardan las frases de homer en su csv propio
 
